@@ -1,5 +1,4 @@
 import { getRandomMonth } from "../../database/monthsData";
-import { capitalizeFirstLetter } from "../../utils";
 
 const getQuestion = () => {
     const month = getRandomMonth()

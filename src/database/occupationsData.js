@@ -1,0 +1,19 @@
+export const occupations = [
+    'doctor',
+    'nurse',
+    'teacher',
+    'engineer',
+    'musician',
+    'artist',
+    'programmer',
+    'writer',
+    'entrepreneur',
+    'scientist',
+    'freelancer',
+    'secretary',
+    'receptionist',
+    'butcher',
+    'cashier',
+    'accountant',
+    'architect'
+]

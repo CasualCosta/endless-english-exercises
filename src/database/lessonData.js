@@ -16,6 +16,16 @@ import weeksToNegative from '../activities/009_who-and-when/weeksToNegative'
 import personGender from '../activities/009_who-and-when/personGender'
 import personPlural from '../activities/009_who-and-when/personPlural'
 
+import occupationsArticle from '../activities/005_what-do-you-do/occupationsArticle'
+import occupationsSentence from '../activities/005_what-do-you-do/occupationsSentence'
+import occupationsNegative from '../activities/005_what-do-you-do/occupationsNegative'
+
+import stuffS from '../activities/006_so-much-stuff/stuffS'
+import stuffEs from '../activities/006_so-much-stuff/stuffEs'
+import stuffY from '../activities/006_so-much-stuff/stuffY'
+import stuffIrregular from '../activities/006_so-much-stuff/stuffIrregular'
+
+
 import homeAffirmative from '../activities/004_home-sweet-home/homeAffirmative'
 import homeNegative from '../activities/004_home-sweet-home/homeNegative'
 import homeInterrogative from '../activities/004_home-sweet-home/homeInterrogative'
@@ -162,13 +172,31 @@ const data = [
         title: 'What do you do?',
         activities: [
             {
-                description: '',
+                description: 'Complete the sentences with the correct indeterminate article. Follow the example:',
                 example: 
                 {
-                    prompt: '',
-                    answer: ''
+                    prompt: 'Michael is __ doctor.',
+                    answer: 'a'
                 },
-                getQuestion: null
+                getQuestion: occupationsArticle
+            },
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / doctor',
+                    answer: 'Michael is a doctor'
+                },
+                getQuestion: occupationsSentence
+            },
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / engineer / doctor',
+                    answer: 'Michael is an Engineer, he is a doctor.'
+                },
+                getQuestion: occupationsNegative
             }
         ]
     },
@@ -176,13 +204,40 @@ const data = [
         title: 'So much stuff',
         activities: [
             {
-                description: '',
+                description: 'Write the plural form of the words given. Follow the example:',
                 example: 
                 {
-                    prompt: '',
-                    answer: ''
+                    prompt: 'horse',
+                    answer: 'horses'
                 },
-                getQuestion: null
+                getQuestion: stuffS
+            },
+            {
+                description: 'Write the plural form of the words given. Follow the example:',
+                example: 
+                {
+                    prompt: 'pass',
+                    answer: 'passes'
+                },
+                getQuestion: stuffEs
+            },
+            {
+                description: 'Write the plural form of the words given. Follow the example:',
+                example: 
+                {
+                    prompt: 'fly',
+                    answer: 'flies'
+                },
+                getQuestion: stuffY
+            },
+            {
+                description: 'Write the plural form of the words given. Follow the example:',
+                example: 
+                {
+                    prompt: 'child',
+                    answer: 'children'
+                },
+                getQuestion: stuffIrregular
             }
         ]
     },

@@ -5,7 +5,6 @@ const getQuestion = () => {
     const isPlural = getBool()
     const quantity = Math.floor(Math.random() * 7) + 1
     const quantifier = isPlural ? ToWordNumber(quantity) : 'a';
-    const home = getBool() ? 'apartment' : 'house';
     const room = getRandomElement(rooms);
     const furniture = getRandomElement(room.furniture)
     
