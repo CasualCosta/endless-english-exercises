@@ -79,16 +79,7 @@ const data = [
         title: 'Who and When',
         vocabulary: ['Months', 'Days of the Week', 'Personality words'],
         grammar: ['Adjectives']
-    },
-    {
-        id: 9,
-        image: 'https://images.unsplash.com/photo-1614579093335-b6ab37ddaace?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
-        alt: 'doctor',
-        source: 'Usman Yousaf',
-        title: 'What do you do?',
-        vocabulary: ['Occupations'],
-        grammar: ['Indeterminate articles']
-    },
+    }
 ]
 
 export default data

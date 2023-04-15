@@ -25,6 +25,17 @@ import stuffEs from '../activities/006_so-much-stuff/stuffEs'
 import stuffY from '../activities/006_so-much-stuff/stuffY'
 import stuffIrregular from '../activities/006_so-much-stuff/stuffIrregular'
 
+import demonstrativeNear from '../activities/007_where-we-live/demonstrativeNear'
+import demonstrativeFar from '../activities/007_where-we-live/demonstrativeFar'
+import demonstrativeBoth from '../activities/007_where-we-live/demonstrativeBoth'
+import demonstrativeSentence from '../activities/007_where-we-live/demonstrativeSentence'
+
+import familyRewriteSingular from '../activities/008_meet-my-family/familyRewriteSingular'
+import familyRewritePlural from '../activities/008_meet-my-family/familyRewritePlural'
+import familyWho from '../activities/008_meet-my-family/familyWho'
+import familyWhose from '../activities/008_meet-my-family/familyWhose'
+
+
 
 import homeAffirmative from '../activities/004_home-sweet-home/homeAffirmative'
 import homeNegative from '../activities/004_home-sweet-home/homeNegative'
@@ -245,13 +256,40 @@ const data = [
         title: 'Where we live',
         activities: [
             {
-                description: '',
+                description: 'Complete the sentences with the correct demonstrative pronoun for proximity. Follow the example:',
                 example: 
                 {
-                    prompt: '',
-                    answer: ''
+                    prompt: 'is a hospital.',
+                    answer: 'This'
                 },
-                getQuestion: null
+                getQuestion: demonstrativeNear
+            },
+            {
+                description: 'Complete the sentences with the correct demonstrative pronoun for distance. Follow the example:',
+                example: 
+                {
+                    prompt: 'is a hospital.',
+                    answer: 'That'
+                },
+                getQuestion: demonstrativeFar
+            },
+            {
+                description: 'Complete the sentences with the correct demonstrative pronoun. Follow the example:',
+                example: 
+                {
+                    prompt: 'is a hospital. (near)',
+                    answer: 'This'
+                },
+                getQuestion: demonstrativeBoth
+            },
+            {
+                description: 'Write sentences based on the prompt. Follow the example:',
+                example: 
+                {
+                    prompt: 'hospital. (near)',
+                    answer: 'This is a hospital.'
+                },
+                getQuestion: demonstrativeSentence
             }
         ]
     },
@@ -259,13 +297,40 @@ const data = [
         title: 'Meet my family',
         activities: [
             {
-                description: '',
+                description: 'Re-write the sentences using the genitive case. Follow the example:',
                 example: 
                 {
-                    prompt: '',
-                    answer: ''
+                    prompt: 'John: "Michael is my brother."',
+                    answer: "Michael is John's brother."
                 },
-                getQuestion: null
+                getQuestion: familyRewriteSingular
+            },
+            {
+                description: 'Re-write the sentences using the genitive case. Follow the example:',
+                example: 
+                {
+                    prompt: 'John and Paul: "Michael is my brother."',
+                    answer: "Michael is John and Paul's brother."
+                },
+                getQuestion: familyRewritePlural
+            },
+            {
+                description: 'Write questions about family. Follow the example:',
+                example: 
+                {
+                    prompt: 'John / Brother',
+                    answer: "Who is John's brother?"
+                },
+                getQuestion: familyWho
+            },
+            {
+                description: 'Write questions about family. Follow the example:',
+                example: 
+                {
+                    prompt: 'John / Brother',
+                    answer: "Whose brother is John?"
+                },
+                getQuestion: familyWhose
             }
         ]
     },

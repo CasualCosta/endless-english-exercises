@@ -1,4 +1,4 @@
-const cities = [
+export const cities = [
     'Los Angeles',
     'London',
     'New York City',
@@ -15,4 +15,4 @@ const cities = [
     'Perth'
 ]
 
-export default cities;
+export default cities
