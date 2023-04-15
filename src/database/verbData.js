@@ -1,8 +1,9 @@
 import { getRandomElement } from "../utils";
 
-const regularVerbs = [
+export const regularVerbs = [
     {
         infinitive: 'cook',
+        gerund: 'cooking',
         thirdPerson: 'cooks',
         past: 'cooked',
         participle: 'cooked',
@@ -15,12 +16,14 @@ const regularVerbs = [
     },
     {
         infinitive: 'cry',
+        gerund: 'crying',
         thirdPerson: 'cries',
         past: 'cried',
         participle: 'cried'
     },
     {
         infinitive: 'dance',
+        gerund: 'dancing',
         thirdPerson: 'dances',
         past: 'danced',
         participle: 'danced',
@@ -32,6 +35,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'express',
+        gerund: 'expressing',
         thirdPerson: 'expresses',
         past: 'expressed',
         participle: 'expressed',
@@ -42,6 +46,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'fry',
+        gerund: 'frying',
         thirdPerson: 'fries',
         past: 'fried',
         participle: 'fried',
@@ -53,6 +58,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'listen',
+        gerund: 'listening',
         thirdPerson: 'listens',
         past: 'listened',
         participle: 'listened',
@@ -65,6 +71,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'paint',
+        gerund: 'painting',
         thirdPerson: 'paints',
         past: 'painted',
         participle: 'painted',
@@ -76,6 +83,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'play',
+        gerund: 'playing',
         thirdPerson: 'plays',
         past: 'played',
         participle: 'played',
@@ -88,6 +96,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'start',
+        gerund: 'starting',
         thirdPerson: 'starts',
         past: 'started',
         participle: 'started',
@@ -100,6 +109,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'study',
+        gerund: 'studying',
         thirdPerson: 'studies',
         past: 'studied',
         participle: 'studied',
@@ -112,6 +122,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'talk',
+        gerund: 'talking',
         thirdPerson: 'talks',
         past: 'talked',
         participle: 'talked',
@@ -124,6 +135,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'train',
+        gerund: 'training',
         thirdPerson: 'trains',
         past: 'trained',
         participle: 'trained',
@@ -136,6 +148,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'try',
+        gerund: 'trying',
         thirdPerson: 'tries',
         past: 'tried',
         participle: 'tried',
@@ -147,6 +160,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'walk',
+        gerund: 'walking',
         thirdPerson: 'walks',
         past: 'walked',
         participle: 'walked',
@@ -158,6 +172,7 @@ const regularVerbs = [
     },
     {
         infinitive: 'watch',
+        gerund: 'watching',
         thirdPerson: 'watches',
         past: 'watched',
         participle: 'watched',
@@ -170,9 +185,10 @@ const regularVerbs = [
     },
 ]
 
-const irregularVerbs = [
+export const irregularVerbs = [
     {
         infinitive: 'begin',
+        gerund: 'beginning',
         thirdPerson: 'begins',
         past: 'began',
         participle: 'begun',
@@ -183,6 +199,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'bring',
+        gerund: 'bringing',
         thirdPerson: 'brings',
         past: 'brought',
         participle: 'brought',
@@ -194,6 +211,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'fly',
+        gerund: 'flying',
         thirdPerson: 'flies',
         past: 'flew',
         participle: 'flown',
@@ -205,6 +223,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'read',
+        gerund: 'reading',
         thirdPerson: 'reads',
         past: 'read',
         participle: 'read',
@@ -218,6 +237,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'ride',
+        gerund: 'riding',
         thirdPerson: 'rides',
         past: 'rode',
         participle: 'ridden',
@@ -229,6 +249,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'run',
+        gerund: 'running',
         thirdPerson: 'runs',
         past: 'ran',
         participle: 'run',
@@ -241,6 +262,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'swim',
+        gerund: 'swimming',
         thirdPerson: 'swims',
         past: 'swam',
         participle: 'swum',
@@ -253,6 +275,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'throw',
+        gerund: 'throwing',
         thirdPerson: 'throws',
         past: 'threw',
         participle: 'thrown',
@@ -264,6 +287,7 @@ const irregularVerbs = [
     },
     {
         infinitive: 'write',
+        gerund: 'writing',
         thirdPerson: 'writes',
         past: 'wrote',
         participle: 'written',

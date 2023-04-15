@@ -10,11 +10,10 @@ import abilitiesToNegative from '../activities/003_abilities/abilitiesToNegative
 import abilitiesToInterrogative from '../activities/003_abilities/abilitiesToInterrogative'
 import abilitiesShortAnswers from '../activities/003_abilities/abilitiesShortAnswers'
 
-
-import monthsAddAdjective from '../activities/009_who-and-when/monthsAddAdjective'
-import weeksToNegative from '../activities/009_who-and-when/weeksToNegative'
-import personGender from '../activities/009_who-and-when/personGender'
-import personPlural from '../activities/009_who-and-when/personPlural'
+import homeAffirmative from '../activities/004_home-sweet-home/homeAffirmative'
+import homeNegative from '../activities/004_home-sweet-home/homeNegative'
+import homeInterrogative from '../activities/004_home-sweet-home/homeInterrogative'
+import homeShort from '../activities/004_home-sweet-home/homeShort'
 
 import occupationsArticle from '../activities/005_what-do-you-do/occupationsArticle'
 import occupationsSentence from '../activities/005_what-do-you-do/occupationsSentence'
@@ -35,12 +34,17 @@ import familyRewritePlural from '../activities/008_meet-my-family/familyRewriteP
 import familyWho from '../activities/008_meet-my-family/familyWho'
 import familyWhose from '../activities/008_meet-my-family/familyWhose'
 
+import monthsAddAdjective from '../activities/009_who-and-when/monthsAddAdjective'
+import weeksToNegative from '../activities/009_who-and-when/weeksToNegative'
+import personGender from '../activities/009_who-and-when/personGender'
+import personPlural from '../activities/009_who-and-when/personPlural'
+
+import temporaryAffirmative from "../activities/010_its-only-temporary/temporaryAffirmative"
+import temporaryToNegative from "../activities/010_its-only-temporary/temporaryToNegative"
+import temporaryToInterrogative from "../activities/010_its-only-temporary/temporaryToInterrogative"
+import temporaryToShort from "../activities/010_its-only-temporary/temporaryShort"
 
 
-import homeAffirmative from '../activities/004_home-sweet-home/homeAffirmative'
-import homeNegative from '../activities/004_home-sweet-home/homeNegative'
-import homeInterrogative from '../activities/004_home-sweet-home/homeInterrogative'
-import homeShort from '../activities/004_home-sweet-home/homeShort'
 
 
 const data = [
@@ -372,6 +376,47 @@ const data = [
                     answer: "Mary and Josh are good people."
                 },
                 getQuestion: personPlural
+            }
+        ]
+    },
+    {
+        title: "It's only temporary",
+        activities: [
+            {
+                description: 'Write a sentence based on the prompt. Follow the example:',
+                example: 
+                {
+                    prompt: 'John / Study',
+                    answer: 'John is studying English this year.'
+                },
+                getQuestion: temporaryAffirmative
+            },
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Sunday is a day. / bad',
+                    answer: "Sunday isn't a bad day."
+                },
+                getQuestion: temporaryToNegative
+            },
+            {
+                description: 'Re-write the sentences with the different person. Follow the example:',
+                example: 
+                {
+                    prompt: 'John is a good person. Mary',
+                    answer: "Mary is a good person."
+                },
+                getQuestion: temporaryToInterrogative
+            },
+            {
+                description: 'Re-write the sentences with the different people. Follow the example:',
+                example: 
+                {
+                    prompt: 'John is a good person. Mary and Josh',
+                    answer: "Mary and Josh are good people."
+                },
+                getQuestion: temporaryToShort
             }
         ]
     },

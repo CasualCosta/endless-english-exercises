@@ -15,7 +15,12 @@ export const getArticle = (word) => {
 
 //array of strings
 export const getRandomElement = (array) => {
-    return array[Math.floor(Math.random() * array.length)]
+    try{
+        return array[Math.floor(Math.random() * array.length)]
+    }
+    catch (error) {
+        console.error(error)
+    }
 }
 
 export const ToWordNumber = (number) => {
