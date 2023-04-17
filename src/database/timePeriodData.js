@@ -8,3 +8,13 @@ export const presentContinuousPeriods = [
     'this month',
     'this year'
 ]
+
+export const vagueFuturePeriods = [
+    'soon',
+    'later',
+    'in the future',
+    'next year',
+    'next month',
+    'when possible',
+    'some time soon'
+]

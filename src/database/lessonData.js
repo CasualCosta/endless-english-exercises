@@ -44,6 +44,10 @@ import temporaryToNegative from "../activities/010_its-only-temporary/temporaryT
 import temporaryToInterrogative from "../activities/010_its-only-temporary/temporaryToInterrogative"
 import temporaryToShort from "../activities/010_its-only-temporary/temporaryShort"
 
+import soonAffirmative from '../activities/011_coming-soon/soonAffirmative'
+import soonToNegative from '../activities/011_coming-soon/soonToNegative'
+import soonToInterrogative from '../activities/011_coming-soon/soonToInterrogative'
+import soonShort from '../activities/011_coming-soon/soonShort'
 
 
 
@@ -420,6 +424,47 @@ const data = [
             }
         ]
     },
+    {
+        title: 'Coming soon',
+        activities: [
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Go to England next year',
+                    answer: 'Michael will go to England next year.'
+                },
+                getQuestion: soonAffirmative
+            },
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael will go to England next year.',
+                    answer: "Michael won't go to England next year."
+                },
+                getQuestion: soonToNegative
+            },
+            {
+                description: 'Re-write the sentences in the interrogative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael will go to England next year.',
+                    answer: 'Will Michael go to England next year?'
+                },
+                getQuestion: soonToInterrogative
+            },
+            {
+                description: 'Re-write the sentences in the interrogative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Will Michael go to England next year? (affirmative)',
+                    answer: 'Yes, he will.'
+                },
+                getQuestion: soonShort
+            }
+        ]
+    }
 ]
 
 export default data;
