@@ -49,6 +49,17 @@ import soonToNegative from '../activities/011_coming-soon/soonToNegative'
 import soonToInterrogative from '../activities/011_coming-soon/soonToInterrogative'
 import soonShort from '../activities/011_coming-soon/soonShort'
 
+import againPlural from '../activities/012_again-and-again/againPlural'
+import againSingular from '../activities/012_again-and-again/againSingular'
+import againToBe from '../activities/012_again-and-again/againToBe'
+
+import routineSingularNegative from '../activities/013_its-routine/routineSingularNegative'
+import routinePluralNegative from '../activities/013_its-routine/routinePluralNegative'
+import routineMixedNegative from '../activities/013_its-routine/routineMixedNegative'
+
+import aboutTimeToInterrogative from '../activities/014_about-time/aboutTimeToInterrogative'
+import aboutTimeQuestion from '../activities/014_about-time/aboutTimeQuestion'
+
 
 
 const data = [
@@ -311,7 +322,8 @@ const data = [
                     prompt: 'John: "Michael is my brother."',
                     answer: "Michael is John's brother."
                 },
-                getQuestion: familyRewriteSingular
+                getQuestion: familyRewriteSingular,
+                amount: 6
             },
             {
                 description: 'Re-write the sentences using the genitive case. Follow the example:',
@@ -320,7 +332,8 @@ const data = [
                     prompt: 'John and Paul: "Michael is my brother."',
                     answer: "Michael is John and Paul's brother."
                 },
-                getQuestion: familyRewritePlural
+                getQuestion: familyRewritePlural,
+                amount: 6
             },
             {
                 description: 'Write questions about family. Follow the example:',
@@ -462,6 +475,96 @@ const data = [
                     answer: 'Yes, he will.'
                 },
                 getQuestion: soonShort
+            }
+        ]
+    },
+    {
+        title: "Again and again",
+        activities: [
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael and Josh / never / watch TV / Wednesday',
+                    answer: 'Michael and Josh never watch TV on Wednesdays.'
+                },
+                getQuestion: againPlural
+            },
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / never / watch TV / Wednesday',
+                    answer: 'Michael never watches TV on Wednesdays.'
+                },
+                getQuestion: againSingular,
+                amount: 6
+            },
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / never / sad / Wednesday',
+                    answer: 'Michael is never sad on Wednesdays.'
+                },
+                getQuestion: againToBe
+            }
+        ]
+    },
+    {
+        title: "It's just routine",
+        activities: [
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael plays tennis at 7am.',
+                    answer: "Michael doesn't play tennis at 7am."
+                },
+                getQuestion: routineSingularNegative
+            },
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael and Josh play tennis at 7am.',
+                    answer: "Michael and Josh don't don't play tennis at 7am."
+                },
+                getQuestion: routinePluralNegative
+            },
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael and Josh play tennis at 7am.',
+                    answer: "Michael and Josh don't don't play tennis at 7am."
+                },
+                getQuestion: routineMixedNegative,
+                amount: 6
+            }
+        ]
+    },
+    {
+        title: "About time",
+        activities: [
+            {
+                description: 'Re-write these sentences in the interrogative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael watches TV at 7pm.',
+                    answer: 'Does Michael watch TV at 7pm?'
+                },
+                getQuestion: aboutTimeToInterrogative
+            },
+            {
+                description: 'Write questions based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / watch TV',
+                    answer: 'What time does Michael watch TV?'
+                },
+                getQuestion: aboutTimeQuestion,
+                amount: 6
             }
         ]
     }

@@ -19,7 +19,11 @@ export const regularVerbs = [
         gerund: 'crying',
         thirdPerson: 'cries',
         past: 'cried',
-        participle: 'cried'
+        participle: 'cried',
+        objects: [
+            'crocodile tears',
+            'tears of joy'
+        ]
     },
     {
         infinitive: 'dance',
@@ -64,9 +68,9 @@ export const regularVerbs = [
         participle: 'listened',
         objects: [
             'to Coldplay',
-            'to the sounds of nature',
+            'to nature',
             'to pop music',
-            'to the music in the room'
+            'to the conversation'
         ]
     },
     {
@@ -195,6 +199,10 @@ export const irregularVerbs = [
         objects: [
             'to study',
             'to understand',
+            'a project',
+            'an experiment',
+            'a task',
+            'a speech'
         ]
     },
     {
@@ -206,7 +214,8 @@ export const irregularVerbs = [
         objects: [
             'good news',
             'life to the party',
-            'a gift'
+            'a gift',
+            'hope'
         ]
     },
     {
@@ -282,7 +291,8 @@ export const irregularVerbs = [
         objects: [
             'a party',
             'a ball',
-            'a balloon'
+            'a coin',
+            'a dart'
         ]
     },
     {

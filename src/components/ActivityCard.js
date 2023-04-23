@@ -2,8 +2,8 @@ import React from 'react'
 import QuestionCard from './QuestionCard';
 
 const ActivityCard = ({activity, index}) => {
-    const {description, example, getQuestion} = activity;
-    const questionAmount = 3;
+    const {description, example, getQuestion, amount } = activity;
+    const questionAmount =  amount ? amount : 3;
     const questions = [];
 
     for(let i = 0; i < questionAmount; i++)
