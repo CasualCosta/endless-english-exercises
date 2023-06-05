@@ -1,0 +1,17 @@
+import { getBool, getRandomElement, getArticle } from "../../utils";
+import { countableFoodItems, uncountableFoodItems } from "../../database/foodData";
+
+
+const getQuestion = () => {
+    const isCountable = getBool()
+    const isPlural = isCountable ? getBool() : false
+    const food = getRandomElement(isCountable ? countableFoodItems : uncountableFoodItems)
+    const quantifier = isCountable ? (isPlural ? 'any' : getArticle(food)) : 'any'
+
+    const prompt = `${food}${isPlural ? 's' : ''}`
+    const answer = `There ${isPlural ? "aren't" : "isn't"} ${quantifier} ${food}${isPlural ? 's' : ''} in the fridge.`
+
+    return { prompt, answer }
+}
+
+export default getQuestion

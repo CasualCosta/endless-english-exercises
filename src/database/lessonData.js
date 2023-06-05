@@ -60,6 +60,15 @@ import routineMixedNegative from '../activities/013_its-routine/routineMixedNega
 import aboutTimeToInterrogative from '../activities/014_about-time/aboutTimeToInterrogative'
 import aboutTimeQuestion from '../activities/014_about-time/aboutTimeQuestion'
 
+import dietManyMuch from '../activities/015_diet/dietManyMuch'
+
+import bingingAffirmative from '../activities/016_binging/bingingAffirmative'
+import bingingNegative from '../activities/016_binging/bingingNegative'
+import bingingInterrogative from '../activities/016_binging/bingingInterrogative'
+
+import hungryAffirmative from '../activities/017_im-hungry/hungryAffirmative'
+import hungryNegative from '../activities/017_im-hungry/hungryNegative'
+import hungryInterrogative from '../activities/017_im-hungry/hungryInterrogative'
 
 
 const data = [
@@ -565,6 +574,85 @@ const data = [
                 },
                 getQuestion: aboutTimeQuestion,
                 amount: 6
+            }
+        ]
+    },
+    {
+        title: "It's a Diet",
+        activities: [
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'sandwich / week',
+                    answer: 'How many sandwiches do you eat in a week?'
+                },
+                getQuestion: dietManyMuch,
+                amount: 6
+            }
+        ]
+    },
+    {
+        title: "Binging",
+        activities: [
+            {
+                description: 'Write affirmative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Sandwich',
+                    answer: 'Michael eats a lot of sandwiches.'
+                },
+                getQuestion: bingingAffirmative
+            },
+            {
+                description: 'Write negative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Sandwich',
+                    answer: "Michael doesn't eat many sandwiches."
+                },
+                getQuestion: bingingNegative
+            },
+            {
+                description: 'Write interrogative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Sandwich',
+                    answer: 'Does Michael eat many sandwiches?'
+                },
+                getQuestion: bingingInterrogative
+            }
+        ]
+    },
+    {
+        title: "I'm hungry",
+        activities: [
+            {
+                description: 'Write affirmative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'eggs',
+                    answer: 'There are some eggs in the fridge.'
+                },
+                getQuestion: hungryAffirmative
+            },
+            {
+                description: 'Write negative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'eggs',
+                    answer: "There aren't any eggs in the fridge."
+                },
+                getQuestion: hungryNegative
+            },
+            {
+                description: 'Write interrogative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'eggs',
+                    answer: "Are There any eggs in the fridge?"
+                },
+                getQuestion: hungryInterrogative
             }
         ]
     }

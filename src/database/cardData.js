@@ -124,6 +124,33 @@ const data = [
         title: "About time",
         vocabulary: ['Telling time'],
         grammar: ['Simple Present: Interrogative form']
+    },
+    {
+        id: 14,
+        image: 'https://images.unsplash.com/photo-1513442542250-854d436a73f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=647&q=80',
+        alt: 'food plate',
+        source: 'Ella Olsson',
+        title: "It's a Diet",
+        vocabulary: ['Food'],
+        grammar: ['How many x How much']
+    },
+    {
+        id: 15,
+        image: 'https://images.unsplash.com/photo-1676363913264-683487d04a19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=836&q=80',
+        alt: 'Man eating chips',
+        source: 'Bermix Studio',
+        title: "Binging",
+        vocabulary: ['Food'],
+        grammar: ['Quantifiers: large quantities', 'Present simple']
+    },
+    {
+        id: 16,
+        image: 'https://images.unsplash.com/photo-1536353284924-9220c464e262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80',
+        alt: 'An open fridge',
+        source: 'nrd',
+        title: "I'm hungry",
+        vocabulary: ['Food'],
+        grammar: ['Quantifiers: moderate quantities', 'To be: present']
     }
 ]
 
