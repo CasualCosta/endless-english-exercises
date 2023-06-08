@@ -70,6 +70,48 @@ import hungryAffirmative from '../activities/017_im-hungry/hungryAffirmative'
 import hungryNegative from '../activities/017_im-hungry/hungryNegative'
 import hungryInterrogative from '../activities/017_im-hungry/hungryInterrogative'
 
+import mealTimeAffirmative from '../activities/018_meal-time/mealTimeAffirmative'
+import mealTimeNegative from '../activities/018_meal-time/mealTimeNegative'
+import mealTimeInterrogative from '../activities/018_meal-time/mealTimeInterrogative'
+
+import dreamsAffirmative from '../activities/019_dreams/dreamsAffirmative'
+import dreamsNegative from '../activities/019_dreams/dreamsNegative'
+import dreamsInterrogative from '../activities/019_dreams/dreamsInterrogative'
+import dreamsShort from '../activities/019_dreams/dreamsShort'
+
+import lovedOnes from '../activities/020_loved-ones/lovedOnes'
+
+import exceptionalDays from '../activities/021_exceptional-days/exceptionalDays'
+
+import yesterdayDayOfTheWeek from '../activities/022_yesterday/yesterdayDayOfTheWeek'
+import yesterdayRewrite from '../activities/022_yesterday/yesterdayRewrite'
+
+import historyToNegative from '../activities/023_its_history/historyToNegative'
+import historyToInterrogative from '../activities/023_its_history/historyToInterrogative'
+import historyShort from '../activities/023_its_history/historyShort'
+
+import diary from '../activities/024_my-diary/diary'
+
+import changedAffirmative from '../activities/025_changed/changedAffirmative'
+import changedNegative from '../activities/025_changed/changedNegative'
+import changedInterrogative from '../activities/025_changed/changedInterrogative'
+import changedShort from '../activities/025_changed/changedShort'
+
+import unfinishedAffirmative from '../activities/026_unfinished/unfinishedAffirmative'
+import unfinishedNegative from '../activities/026_unfinished/unfinishedNegative'
+import unfinishedInterrogative from '../activities/026_unfinished/unfinishedInterrogative'
+
+import interruptedWhen from '../activities/027_interrupted/interruptedWhen'
+import interruptedWhile from '../activities/027_interrupted/interruptedWhile'
+
+import sequencingAfterFirst from '../activities/028_sequencing/sequencingAfterFirst'
+import sequencingAfterSecond from '../activities/028_sequencing/sequencingAfterSecond'
+import sequencingAnd from '../activities/028_sequencing/sequencingAnd'
+import sequencingThen from '../activities/028_sequencing/sequencingThen'
+
+import planningAffirmative from '../activities/029_planning-ahead/planningAffirmative'
+import planningNegative from '../activities/029_planning-ahead/planningNegative'
+import planningInterrogative from '../activities/029_planning-ahead/planningInterrogative'
 
 const data = [
     {
@@ -653,9 +695,82 @@ const data = [
                     answer: "Are There any eggs in the fridge?"
                 },
                 getQuestion: hungryInterrogative
+            },
+        ]
+    },
+    {
+        title: "Meal Time",
+        activities: [
+            {
+                description: 'Write affirmative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Cake',
+                    answer: 'Michael would like some cake.'
+                },
+                getQuestion: mealTimeAffirmative
+            },
+            {
+                description: 'Write negative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Cake',
+                    answer: "Michael wouldn't like some cake."
+                },
+                getQuestion: mealTimeNegative
+            },
+            {
+                description: 'Write interrogative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / Cake',
+                    answer: 'Would Michael like some cake?'
+                },
+                getQuestion: mealTimeInterrogative
             }
         ]
-    }
+    },
+    {
+        title: "Dream On",
+        activities: [
+            {
+                description: 'Write affirmative sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / work from home',
+                    answer: 'If possible, Michael would work from home.'
+                },
+                getQuestion: dreamsAffirmative
+            },
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: "Michael would work from home, if possible.",
+                    answer: "Michael wouldn't work from home, if possible."
+                },
+                getQuestion: dreamsNegative
+            },
+            {
+                description: 'Re-write the sentences in the interrogative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'If possible, Michael would work from home.',
+                    answer: 'If possible, would Michael work from home?'
+                },
+                getQuestion: dreamsInterrogative
+            },
+            {
+                description: 'Write short answers to the questions. Follow the example:',
+                example: 
+                {
+                    prompt: "If possible, would Michael work from home? (Affirmative)",
+                    answer: 'Yes, he would.'
+                },
+                getQuestion: dreamsShort
+            }
+        ]
+    },
 ]
 
 export default data;

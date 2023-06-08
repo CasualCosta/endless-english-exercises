@@ -51,3 +51,7 @@ export const ToWordNumber = (number) => {
 export const getBool = () => {
     return Math.floor(Math.random() * 2) === 0
 }
+
+export const getRandomNumber = (minInclusive, maxExclusive) => {
+    return Math.floor(Math.random() * maxExclusive - minInclusive) + minInclusive;
+}
