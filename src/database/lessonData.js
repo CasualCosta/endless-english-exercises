@@ -771,6 +771,272 @@ const data = [
             }
         ]
     },
+    {
+        title: "Loved ones",
+        activities: [
+            {
+                description: 'Re-write the sentences using objective pronouns. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael likes Jessica.',
+                    answer: 'Michael likes her.'
+                },
+                getQuestion: lovedOnes
+            }
+        ]
+    },
+    {
+        title: "Exceptional days",
+        activities: [
+            {
+                description: 'Write sentences based on the prompts. Follow the example:',
+                example: 
+                {
+                    prompt: 'Michael / never / play tennis / watch TV',
+                    answer: 'Michael never plays tennis. Today, he is watching TV.'
+                },
+                getQuestion: exceptionalDays
+            }
+        ]
+    },
+    {
+        title: "Yesterday",
+        activities: [
+            {
+                description: 'Re-write the sentence in the past tense. Follow the example:',
+                example: 
+                {
+                    prompt: 'John studies English.',
+                    answer: 'John studied English.'
+                },
+                getQuestion: yesterdayRewrite
+            },
+            {
+                description: 'Write past sentences based on the prompts. Follow the example:',
+                example:
+                {
+                    prompt: 'Sunday / Tom / play tennis',
+                    answer: 'On Sunday, Tom played tennis.'
+                },
+                getQuestion: yesterdayRewrite
+            }
+        ]
+    },
+    {
+        title: "It's history",
+        activities: [
+            {
+                description: 'Re-write the sentences in the negative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'John danced salsa three days ago.',
+                    answer: "John didn't dance salsa three days ago."
+                },
+                getQuestion: historyToNegative
+            },
+            {
+                description: 'Re-write the sentences in the interrogative form. Follow the example:',
+                example: 
+                {
+                    prompt: 'John danced salsa three days ago.',
+                    answer: "Did John dance salsa three days ago?"
+                },
+                getQuestion: historyToInterrogative
+            },
+            {
+                description: 'Write short answers to the questions. Follow the example:',
+                example: 
+                {
+                    prompt: 'Did John dance salsa three days ago? (Affirmative)',
+                    answer: "Yes, he did.."
+                },
+                getQuestion: historyShort
+            }
+        ]
+    },
+    {
+        title: "My diary",
+        activities: [
+            {
+                description: "Answer the question based with the information in brackets. Follow the example:",
+                example: 
+                {
+                    prompt: "When did Michael buy the TV? (two days)",
+                    answer: "Michael bought the TV two days ago."
+                },
+                getQuestion: diary
+            }
+        ]
+    },
+    {
+        title: "Changed",
+        activities: [
+            {
+                description: "Re-write the sentences in the past form. Follow the example:",
+                example: 
+                {
+                    prompt: "John is happy today.",
+                    answer: "John was happy yesterday."
+                },
+                getQuestion: changedAffirmative
+            },
+            {
+                description: "Re-write the sentences in the past form. Follow the example:",
+                example: 
+                {
+                    prompt: "John isn't happy today.",
+                    answer: "John wasn't happy yesterday."
+                },
+                getQuestion: changedNegative
+            },
+            {
+                description: "Re-write the sentences in the past form. Follow the example:",
+                example: 
+                {
+                    prompt: "Is John happy today?",
+                    answer: "Was John happy yesterday?"
+                },
+                getQuestion: changedInterrogative
+            },
+            {
+                description: "Answer the question with the appropriate short answer:",
+                example: 
+                {
+                    prompt: "Was John happy yesterday? (Affirmative)",
+                    answer: "Yes, he was."
+                },
+                getQuestion: changedShort
+            }
+        ]
+    },
+    {
+        title: "Unfinished",
+        activities: [
+            {
+                description: "Re-write the sentences in the past tense. Follow the example:",
+                example: 
+                {
+                    prompt: "Daniel is singing in the shower.",
+                    answer: "Daniel was singing in the shower."
+                },
+                getQuestion: unfinishedAffirmative
+            },
+            {
+                description: "Re-write the sentences in the past tense. Follow the example:",
+                example: 
+                {
+                    prompt: "Daniel isn't singing in the shower.",
+                    answer: "Daniel wasn't singing in the shower."
+                },
+                getQuestion: unfinishedNegative
+            },
+            {
+                description: "Re-write the sentences in the past tense. Follow the example:",
+                example: 
+                {
+                    prompt: "Is Daniel singing in the shower?",
+                    answer: "Was Daniel singing in the shower?"
+                },
+                getQuestion: unfinishedInterrogative
+            }
+        ]
+    },
+    {
+        title: "Interrupted",
+        activities: [
+            {
+                description: "Write sentences based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Josh / watch TV / Lisa / sleep in bed",
+                    answer: "Josh was watching TV while Lisa was sleeping in bed."
+                },
+                getQuestion: interruptedWhile
+            },
+            {
+                description: "Write sentences based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Josh / watch TV / Lisa / open the door",
+                    answer: "Josh was watching TV when Lisa opened the door."
+                },
+                getQuestion: interruptedWhen
+            }
+        ]
+    },
+    {
+        title: "Sequencing",
+        activities: [
+            {
+                description: "Write sentences based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael eat pasta / take a picture",
+                    answer: "Michael ate pasta and took a picture."
+                },
+                getQuestion: sequencingAnd
+            },
+            {
+                description: "Write sentences based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael eat pasta / take a picture",
+                    answer: "Michael ate pasta, then he took a picture."
+                },
+                getQuestion: sequencingThen
+            },
+            {
+                description: "Write sentences based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael eat pasta / take a picture",
+                    answer: "After he ate pasta, Michael took a picture."
+                },
+                getQuestion: sequencingAfterFirst
+            },
+            {
+                description: "Write sentences based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael eat pasta / take a picture",
+                    answer: "Michael took a picture after he ate pasta."
+                },
+                getQuestion: sequencingAfterSecond
+            }
+        ]
+    },
+    {
+        title: "Planning ahead",
+        activities: [
+            {
+                description: "Write future plans based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael / play soccer / Friday",
+                    answer: "Michael is going to play soccer on Friday."
+                },
+                getQuestion: planningAffirmative
+            },
+            {
+                description: "Write negative future plans based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael / play soccer / Friday",
+                    answer: "Michael isn't going to play soccer on Friday."
+                },
+                getQuestion: planningNegative
+            },
+            {
+                description: "Write future plans based on the prompts. Follow the example:",
+                example: 
+                {
+                    prompt: "Michael / play soccer / Friday",
+                    answer: "Is Michael going to play soccer on Friday?"
+                },
+                getQuestion: planningInterrogative
+            }
+        ]
+    },
 ]
 
 export default data;
@@ -780,11 +1046,11 @@ export default data;
 //     title: ,
 //     activities: [
 //         {
-//             description: '',
+//             description: "",
 //             example: 
 //             {
-//                 prompt: '',
-//                 answer: ''
+//                 prompt: "",
+//                 answer: ""
 //             },
 //             getQuestion: null
 //         }

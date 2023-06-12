@@ -16,7 +16,7 @@ const getQuestion = () => {
     const secondObject = getRandomElement(secondVerb.objects)
 
     const prompt = `${subject.firstName} / ${adverb} / ${firstVerb.infinitive} ${firstObject} / ${secondVerb.infinitive} ${secondObject}`
-    const answer = `${subject.firstName} ${adverb} ${isPlural ? firstVerb.infinitive : firstVerb.thirdPerson}. Today, ${subject.subjectivePronoun} ${isPlural ? 'are' : 'is'} ${secondVerb.gerund}.`
+    const answer = `${subject.firstName} ${adverb} ${isPlural ? firstVerb.infinitive : firstVerb.thirdPerson}. Today, ${subject.subjectivePronoun} ${isPlural ? 'are' : 'is'} ${secondVerb.gerund} ${secondObject}.`
 
     return { prompt, answer }
 }

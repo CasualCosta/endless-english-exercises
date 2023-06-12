@@ -15,7 +15,7 @@ const getQuestion = () => {
 
     const maleObj = getBool()
     const pluralObj = getBool()
-    const object = pluralSub ? getPeople() : getPerson(maleObj)
+    const object = pluralObj ? getPeople() : getPerson(maleObj)
 
     const verb = getRandomElement(verbs) + `${pluralSub ? '' : 's'}`
 

@@ -19,7 +19,7 @@ const getQuestion = () => {
     const verb = getRandomElement(irregularVerbs)
     const object = getRandomElement(verb.objects)
 
-    const prompt = `Did ${subject.firstName} ${verb.infinitive} ${object} ${number} ${period}s ago?`
+    const prompt = `When did ${subject.firstName} ${verb.infinitive} ${object}? (${number} ${period})`
     const answer = `${subject.firstName} ${verb.past} ${object} ${number} ${period}s ago.`
 
     return { prompt, answer }
