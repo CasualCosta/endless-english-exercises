@@ -12,7 +12,7 @@ const getQuestion = () => {
     const objectTwo = getRandomElement(verbTwo.objects)
 
 
-    const prompt = `${subject.firstName} / ${verb.past} ${object} / ${verbTwo} ${objectTwo}`
+    const prompt = `${subject.firstName} / ${verb.infinitive} ${object} / ${verbTwo.infinitive} ${objectTwo}`
     const answer = `${subject.firstName} ${verbTwo.past} ${objectTwo} after ${subject.subjectivePronoun} ${verb.past} ${object}.`
 
     return { prompt, answer }

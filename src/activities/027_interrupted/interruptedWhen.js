@@ -14,7 +14,7 @@ const getQuestion = () => {
     const objectTwo = getRandomElement(verbTwo.objects)
 
 
-    const prompt = `${subject.firstName} / ${verb.infinitive} ${object} / ${subjectTwo.firstName} / ${verbTwo} ${objectTwo}`
+    const prompt = `${subject.firstName} / ${verb.infinitive} ${object} / ${subjectTwo.firstName} / ${verbTwo.infinitive} ${objectTwo}`
     const answer = `${subject.firstName} was ${verb.gerund} ${object} when ${subjectTwo.firstName} ${verbTwo.past} ${objectTwo}.`
 
     return { prompt, answer }
