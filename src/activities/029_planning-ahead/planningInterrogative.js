@@ -13,7 +13,7 @@ const getQuestion = () => {
     const day = getRandomElement(daysOfTheWeek)
 
     const prompt = `${subject} / ${verb.infinitive}${object ? ' ' + object : ''} / ${day}`
-    const answer = `${toBe} ${subject} going to ${verb.infinitive} ${object ? object + ' ' : ''} on ${day}?`
+    const answer = `${toBe} ${subject} going to ${verb.infinitive} ${object ? object + ' ' : ''}on ${day}?`
 
     return { prompt, answer }
 }
