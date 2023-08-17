@@ -118,7 +118,7 @@ const data = [
         title: 'My Country',
         activities: [
             {
-                description: 'Put the sentences in the negative form. Follow the example:',
+                description: 'Form sentences. Follow the example:',
                 example:
                 {
                     prompt: 'Portugal / John',
